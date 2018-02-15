@@ -1,0 +1,85 @@
+@font-face {
+	font-family: HansKendrick;
+	src: url(HansKendrick-Regular.otf);
+}
+
+body {
+	background-color: #e2e7ec;
+	font-family: HansKendrick, sans-serif;
+}
+
+.blog {
+	width: 1120px;
+	height: 1100px;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+.article:first-child {
+	display: flex;
+	width: 740px;
+	height: 540px;
+}
+
+.article {
+	position: relative;
+	background-color: #ffffff;
+	display: flex;
+	width: 360px;
+	height: 540px;
+}
+
+.article__photo {
+	position: absolute;
+	z-index: 0;
+	cursor: pointer;
+}
+
+.article__info {
+	position: absolute;
+	z-index: 1;
+	top: 260px;
+	padding: 0 30px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.article__info-1 {
+	position: absolute;
+	z-index: 1;
+	bottom: 10px;
+	color: #ffffff;
+	padding: 0 30px;
+	text-transform: uppercase;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.article__date {
+	font-size: 13px;
+	color: #818181;
+}
+
+.article__date-hid {
+	opacity: 0;
+}
+
+.article__title {
+	font-size: 22px;
+}
+
+.article__title-1 {
+	font-size: 30px;
+	width: 75%;
+}
+
+.article__author {
+	margin-top: 55px;
+}
+
+.article:hover {
+	background: linear-gradient(to top, #cab68c, #ffffff);
+}
